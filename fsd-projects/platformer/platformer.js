@@ -27,22 +27,28 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-     toggleGrid();
+     toggleGrid(); 
 
 
     // TODO 2 - Create Platforms
-
-
+createPlatform(100, 600, 200, 20, "grey");      // Ground platform
+createPlatform(350, 500, 150, 20, "green");     // Mid-height
+createPlatform(600, 400, 100, 20, "orange");    // Higher up
+createPlatform(800, 300, 150, 20, "blue");      // Near top
+createPlatform(1050, 400, 100, 20, "red");      // Challenge jump
 
 
     // TODO 3 - Create Collectables
-
-
+createCollectable("diamond", 370, 420);              // on green platform
+createCollectable("grace", 810, 220, 0, 0.5);         // on blue platform
+createCollectable("kennedi", 1100, 370, 0, 1);        // bouncing
 
     
     // TODO 4 - Create Cannons
-
-
+createCannon("left", 300, 1500);    // fires every 1.5s
+createCannon("top", 600, 2000);     // fires from above
+createCannon("right", 450, 1200);   // fast cannon
+createCollectable("gem", 200, 100, 0, 1, 100, 300, 2)
     
     
     //////////////////////////////////
